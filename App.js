@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Routes from './src/routes'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import AppLoading from 'expo-app-loading'
-import * as Font from 'expo-font';
 
 import TimersProvider from './src/services/TimersContext'
 
+import { useFonts } from 'expo-font'
 import { 
-  useFonts,
   Montserrat_400Regular,
   Montserrat_400Regular_Italic,
   Montserrat_600SemiBold,
@@ -23,7 +22,7 @@ export default function App() {
     Montserrat_400Regular_Italic,
     Montserrat_600SemiBold,
     Montserrat_600SemiBold_Italic,
-  });
+  })
 
   async function _setLocalStorage() {
     var myData = await AsyncStorage.getItem('@Timers')
@@ -42,10 +41,10 @@ export default function App() {
     _setLocalStorage()
   }, [])
 
-  // if (!fontsLoaded)
-  //  return (
-  //   <AppLoading />
-  //  )
+  if (!fontsLoaded)
+   return (
+    <AppLoading />
+   )
 
   if (!loaded) {
     return (

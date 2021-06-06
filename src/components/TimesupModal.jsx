@@ -1,5 +1,5 @@
-import React from 'react'
-import { Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import React, { useEffect } from 'react'
+import { Modal, StyleSheet, Text, TouchableOpacity, View, Vibration } from 'react-native'
 
 import { useTimersContext } from '../services/TimersContext'
 
@@ -8,6 +8,11 @@ import fonts from '../styles/fonts'
 
 export default function TimesupModal() {
    const {callModal, setCallModal} = useTimersContext()
+
+   useEffect(() => {
+      if (callModal)
+      Vibration.vibrate()
+   }, [callModal])
 
    return (
       <Modal

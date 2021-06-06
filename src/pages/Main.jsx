@@ -346,7 +346,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.textI,
     letterSpacing: 1.2,
     textShadowColor: colors.gray_dark,
-    textShadowRadius: 6,
+    textShadowRadius: 2,
     textShadowOffset: {width: 0, height: 2},
   },
   timeDisplay: {
@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.textI,
     letterSpacing: 1.2,
     textShadowColor: colors.gray,
-    textShadowRadius: 5,
+    textShadowRadius: 2,
     textShadowOffset: {width: 0, height: 2},
   },
 

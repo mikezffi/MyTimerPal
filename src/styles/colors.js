@@ -1,5 +1,6 @@
 export default {
   bg: '#F4F5F7',
+  bg: '#FFFFFF',
   
   black: '#111111',
   white: '#FFFFFF',
@@ -9,7 +10,6 @@ export default {
   gray: '#CFCFCF',
   gray_light: '#F0F0F0',
   gray_dark: '#B1B2B4',
-  
   
   blue: '#0067EF',
   blue_light: '#029BFF',

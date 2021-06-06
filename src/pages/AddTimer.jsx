@@ -83,6 +83,7 @@ export function AddTimer() {
          animKey == data.key ? {borderColor: colors.blue, borderWidth: 5, borderRadius: 20}: '']}>
          <View style={styles.itemText}>
             <Text style={{
+               fontFamily: fonts.textI,
                fontSize: 24,
                textAlign: 'center',
                color: colors.black50,
@@ -106,7 +107,6 @@ export function AddTimer() {
 
    return(
       <SafeAreaView style={[styles.container]}>
-       
          {/* Header */}
          <View style={[styles.labelContainer, {marginTop: Platform.OS == 'ios' ? 0 : 30}]}>
             <View style={[styles.controlls, {}]}>
@@ -175,9 +175,6 @@ export function AddTimer() {
                />
             </View>
          }
-
-            
-         
       </SafeAreaView>
    )
 }
@@ -225,7 +222,7 @@ const styles = StyleSheet.create({
    },
    headerText: {
       textAlign: 'center',
-      fontFamily: fonts.titleI,
+      fontFamily: fonts.title,
       fontSize: 24,
       color: colors.white,
       textShadowColor: colors.black50,
@@ -280,7 +277,6 @@ const styles = StyleSheet.create({
       fontSize: 60,
       fontFamily: fonts.title,
       letterSpacing: 30,
-      
    },
    timeText: {
       fontSize: 60,

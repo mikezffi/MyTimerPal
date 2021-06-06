@@ -15,7 +15,7 @@ const AppRoutes = () => (
       headerMode="none"
       screenOptions={{
          cardStyle: {
-            backgroundColor: colors.bg
+            backgroundColor: colors.white
          },
       }}
    >

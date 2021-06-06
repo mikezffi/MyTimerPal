@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "project-MyTimerPal",
+    "name": "My Timer Pal",
     "slug": "project-MyTimerPal",
     "version": "1.0.0",
+    "userInterfaceStyle": "light",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,17 +18,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mikezffi.mytimerpal",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "com.mikezffi.mytimerpal",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "userInterfaceStyle": "light"
+    }
   }
 }
